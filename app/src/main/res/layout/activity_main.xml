@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_backgroung"
     tools:context=".MainActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/map_lv_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="level 1"
-        android:onClick="startLv1"/>
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:onClick="startLv1"
+        android:text="level 1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/map_lv_2"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/map_lv_1"
+        android:onClick="startLv1"
+        android:text="level 1" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/map_lv_3"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/map_lv_2"
+        android:onClick="startLv1"
+        android:text="level 1" />
+
+    <ImageButton
+        android:id="@+id/map_lv_4"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/map_lv_3"
+        android:onClick="startLv1"
+        android:text="level 1" />
+
+
+</RelativeLayout>
