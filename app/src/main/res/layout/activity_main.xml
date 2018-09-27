@@ -25,7 +25,7 @@
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@id/map_lv_1"
         android:onClick="startLv1"
-        android:text="level 1" />
+        android:text="level 2" />
 
     <ImageButton
         android:id="@+id/map_lv_3"
@@ -35,7 +35,7 @@
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@id/map_lv_2"
         android:onClick="startLv1"
-        android:text="level 1" />
+        android:text="level 3" />
 
     <ImageButton
         android:id="@+id/map_lv_4"
@@ -45,7 +45,7 @@
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@id/map_lv_3"
         android:onClick="startLv1"
-        android:text="level 1" />
+        android:text="level 4" />
 
 
 </RelativeLayout>
