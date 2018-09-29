@@ -4,6 +4,7 @@ package dev.mandapo.pramandagame;
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -25,30 +26,35 @@ public class MapLv1 extends AppCompatActivity {
 
     public void btnNextTask(View view) {
         String taskKey = view.getTag().toString();
-        DisplayMetrics metrics = getResources().getDisplayMetrics();
-        int xDpi = 0;
-        int yDpi = 0;
-        switch (taskKey) {
-            case "0":
-                xDpi = (int)(metrics.density * 0f);
-                yDpi = (int)(metrics.density * 0f);
-            break;
-            case "1":
-                xDpi = (int)(metrics.density * 60f);
-                yDpi = (int)(metrics.density * -70f);
-                break;
-            case "2":
-                xDpi = (int)(metrics.density * 120f);
-                yDpi = (int)(metrics.density * 10f);
-                break;
-            case "3":
-                xDpi = (int)(metrics.density * 190f);
-                yDpi = (int)(metrics.density * 110f);
-                break;
-        }
 
-        GifImageView gifImageView = (GifImageView) findViewById(R.id.gifChar);
-        gifImageView.animate().translationX(xDpi).translationY(yDpi).setDuration(500).start();
+        Intent intent = new Intent(MapLv1.this, QuestionActivity.class);
+        intent.putExtra(QuestionActivity.EXTRA_TASK_KEY, taskKey);
+        startActivity(intent);
+//        DisplayMetrics metrics = getResources().getDisplayMetrics();
+//        int xDpi = 0;
+//        int yDpi = 0;
+
+//        switch (taskKey) {
+//            case "0":
+//                xDpi = (int)(metrics.density * 0f);
+//                yDpi = (int)(metrics.density * 0f);
+//            break;
+//            case "1":
+//                xDpi = (int)(metrics.density * 60f);
+//                yDpi = (int)(metrics.density * -70f);
+//                break;
+//            case "2":
+//                xDpi = (int)(metrics.density * 120f);
+//                yDpi = (int)(metrics.density * 10f);
+//                break;
+//            case "3":
+//                xDpi = (int)(metrics.density * 190f);
+//                yDpi = (int)(metrics.density * 110f);
+//                break;
+//        }
+//
+//        GifImageView gifImageView = (GifImageView) findViewById(R.id.gifChar);
+//        gifImageView.animate().translationX(xDpi).translationY(yDpi).setDuration(500).start();
 
     }
 }

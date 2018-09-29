@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@android:color/holo_blue_dark"
+    android:background="@drawable/bc"
     tools:context=".MapLv1"
     android:orientation="vertical">
 
