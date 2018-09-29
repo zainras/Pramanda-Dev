@@ -1,13 +1,16 @@
 package dev.mandapo.pramandagame;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class QuestionActivity extends AppCompatActivity {
 
-    public static String EXTRA_TASK_KEY = "extra_task_key";
+    public static String EXTRA_TASK_KEY = "";
 
     String[] questionList;
     String[][] choiceList;
@@ -55,10 +58,10 @@ public class QuestionActivity extends AppCompatActivity {
 
         answerKeyList = new int[]{1,2,0,0,2,2,0,1,0,2};
         
-        currentQuiz = 0;
 
         Integer tKey = Integer.valueOf(getIntent().getStringExtra(EXTRA_TASK_KEY));
 
+        currentQuiz = tKey;
         question.setText(questionList[tKey]);
         btnA1.setText(choiceList[tKey][0]);
         btnA2.setText(choiceList[tKey][1]);
@@ -66,4 +69,22 @@ public class QuestionActivity extends AppCompatActivity {
         btnA4.setText(choiceList[tKey][3]);
         
     }
+
+	public void chooseAnswer(View view) {
+        Integer answerKey = Integer.valueOf(view.getTag().toString());
+        if (answerKeyList[currentQuiz] == answerKey){
+            scoreQuiz += 10;
+	        currentQuiz += 1;
+            String cQuiz = Integer.toString(currentQuiz);
+            Intent intent = new Intent(QuestionActivity.this, MapLv1.class);
+	        intent.putExtra("EXTRA_JOS", cQuiz);
+	        startActivity(intent);
+        }
+        else {
+            Toast.makeText(this, "Salah bro", Toast.LENGTH_SHORT).show();
+        }
+
+
+
+	}
 }
