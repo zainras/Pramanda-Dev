@@ -10,42 +10,50 @@
 
     <ImageButton
         android:id="@+id/map_lv_1"
-        android:layout_width="120dp"
+        android:layout_width="115dp"
         android:layout_height="160dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
         android:onClick="startLv1"
-        android:text="level 1" />
+        android:text="level 1"
+        android:background="#757575"/>
 
     <ImageButton
         android:id="@+id/map_lv_2"
-        android:layout_width="120dp"
+        android:layout_width="115dp"
         android:layout_height="160dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginLeft="16dp"
         android:layout_toRightOf="@id/map_lv_1"
         android:onClick="startLv1"
-        android:text="level 2" />
+        android:text="level 2"
+        android:background="#757575" />
 
     <ImageButton
         android:id="@+id/map_lv_3"
-        android:layout_width="120dp"
+        android:layout_width="115dp"
         android:layout_height="160dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@id/map_lv_2"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/map_lv_4"
         android:onClick="startLv1"
-        android:text="level 3" />
+        android:text="level 3"
+        android:background="#757575"/>
 
     <ImageButton
         android:id="@+id/map_lv_4"
-        android:layout_width="120dp"
+        android:layout_width="115dp"
         android:layout_height="160dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@id/map_lv_3"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
         android:onClick="startLv1"
-        android:text="level 4" />
+        android:text="level 4"
+        android:background="#757575" />
 
 
 </RelativeLayout>
