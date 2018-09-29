@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/bc"
+    android:background="@drawable/ic_bc_map"
     tools:context=".MapLv1"
     android:orientation="vertical">
 
@@ -43,7 +43,8 @@
         android:layout_marginTop="80dp"
         android:onClick="btnNextTask"
         android:tag="0"
-        android:text="Button" />
+        android:text="Button"
+        android:background="@drawable/ic_footstep" />
 
     <Button
         android:id="@+id/btnQuizB"
@@ -53,7 +54,8 @@
         android:layout_toRightOf="@id/btnQuizA"
         android:onClick="btnNextTask"
         android:tag="1"
-        android:text="Button" />
+        android:text="Button"
+        android:background="@drawable/ic_footstep"/>
 
     <Button
         android:id="@+id/btnQuizC"
@@ -63,7 +65,8 @@
         android:layout_toRightOf="@id/btnQuizB"
         android:onClick="btnNextTask"
         android:tag="2"
-        android:text="Button" />
+        android:text="Button"
+        android:background="@drawable/ic_footstep" />
 
     <Button
         android:id="@+id/btnQuizD"
@@ -75,7 +78,8 @@
         android:layout_toRightOf="@id/btnQuizC"
         android:onClick="btnNextTask"
         android:tag="3"
-        android:text="Button" />
+        android:text="Button"
+        android:background="@drawable/ic_footstep" />
 
     <Button
         android:id="@+id/btnQuizE"
@@ -87,17 +91,19 @@
         android:layout_marginStart="40dp"
         android:onClick="btnNextTask"
         android:tag="4"
-        android:text="Button" />
+        android:text="Button"
+        android:background="@drawable/ic_footstep"/>
 
     <Button
         android:id="@+id/btnQuizF"
-        android:layout_width="60dp"
+        android:layout_width="45dp"
         android:layout_height="60dp"
         android:layout_alignTop="@id/btnQuizD"
         android:layout_marginLeft="16dp"
         android:layout_toEndOf="@id/btnQuizD"
         android:layout_toRightOf="@id/btnQuizD"
-        android:text="Button" />
+        android:text="Button"
+        android:background="@drawable/ic_footstep"/>
 
     <TextView
         android:id="@+id/tvScore"
